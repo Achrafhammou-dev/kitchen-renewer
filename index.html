@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOYAU — Rénovation de Cuisines Premium à Casablanca</title>
+<meta name="description" content="NOYAU transforme votre ancienne cuisine en un espace moderne et élégant. Matériaux premium, finitions haut de gamme, prise de mesure à domicile et devis personnalisé à Casablanca et ses environs.">
+<meta name="keywords" content="rénovation cuisine Casablanca, cuisine premium Maroc, cuisine sur mesure, cuisine moderne Casablanca, aménagement cuisine haut de gamme">
+<meta name="author" content="NOYAU">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.noyau-cuisines.ma/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="NOYAU — Rénovation de Cuisines Premium à Casablanca">
+<meta property="og:description" content="Nous transformons votre ancienne cuisine en un espace moderne et élégant. Matériaux premium, prise de mesure à domicile, devis personnalisé.">
+<meta property="og:image" content="https://images.pexels.com/photos/18041818/pexels-photo-18041818.jpeg?auto=compress&cs=tinysrgb&w=1600">
+<meta property="og:url" content="https://www.noyau-cuisines.ma/">
+<meta property="og:locale" content="fr_MA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NOYAU — Rénovation de Cuisines Premium à Casablanca">
+<meta name="twitter:description" content="Cuisines premium sur mesure. Prise de mesure à domicile, devis personnalisé. Casablanca et environs.">
+<meta name="twitter:image" content="https://images.pexels.com/photos/18041818/pexels-photo-18041818.jpeg?auto=compress&cs=tinysrgb&w=1600">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "NOYAU",
+  "description": "Rénovation de cuisines premium sur mesure à Casablanca et ses environs.",
+  "areaServed": "Casablanca, Maroc",
+  "priceRange": "Sur devis",
+  "telephone": "+212600000000"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#FAFAF8',
+          paper: '#FFFFFF',
+          ink: '#121212',
+          charcoal: '#232323',
+          mist: '#F3F3F3',
+          gold: '#C8A96A',
+          goldSoft: '#DCC593',
+        },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+        letterSpacing: {
+          widest2: '0.28em',
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased">
+
+<!-- Loader -->
+<div id="loader" class="loader">
+  <div class="loader-mark">
+    <span class="loader-line"></span>
+    <span class="loader-word">NOYAU</span>
+    <span class="loader-line"></span>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div id="scrollProgress" class="scroll-progress"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-500">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-20 md:h-24">
+    <a href="#accueil" class="flex items-center gap-3 group">
+      <span class="brand-mark"></span>
+      <span class="font-serif text-2xl tracking-wide nav-logo-text">NOYAU</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-10 text-[13px] tracking-widest2 uppercase nav-links">
+      <a href="#accueil" class="nav-link" data-i18n="nav.home">Accueil</a>
+      <a href="#realisations" class="nav-link" data-i18n="nav.projects">Réalisations</a>
+      <a href="#processus" class="nav-link" data-i18n="nav.process">Processus</a>
+      <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3 md:gap-5">
+      <div class="lang-switch" role="group" aria-label="Langue / Language / اللغة">
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar">AR</button>
+      </div>
+
+      <a href="#contact" class="hidden md:inline-flex btn-gold">
+        <span data-i18n="nav.cta">Demander un devis</span>
+      </a>
+
+      <a href="#contact" class="mobile-cta-icon md:hidden" aria-label="Réserver une consultation" data-i18n-aria="nav.cta">
+        <i data-lucide="calendar-check" class="w-5 h-5"></i>
+      </a>
+
+      <button id="menuToggle" class="lg:hidden flex flex-col gap-[5px] w-9 h-9 items-center justify-center" aria-label="Ouvrir le menu" data-i18n-aria="nav.ariaMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <nav class="flex flex-col items-center gap-7 py-10 text-lg font-serif">
+      <a href="#accueil" class="mobile-link" data-i18n="nav.home">Accueil</a>
+      <a href="#realisations" class="mobile-link" data-i18n="nav.projects">Réalisations</a>
+      <a href="#processus" class="mobile-link" data-i18n="nav.process">Processus</a>
+      <a href="#faq" class="mobile-link" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch lang-switch-mobile" role="group" aria-label="Langue / Language / اللغة">
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      <a href="#contact" class="btn-gold mt-2"><span data-i18n="nav.cta">Demander un devis</span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="accueil" class="hero relative w-full h-[100svh] min-h-[640px] overflow-hidden">
+  <div class="absolute inset-0 hero-parallax" id="heroImage">
+    <img src="https://images.pexels.com/photos/18041818/pexels-photo-18041818.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
+         alt="Cuisine premium moderne avec îlot central en marbre, Casablanca"
+         class="w-full h-full object-cover" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- blueprint corner brackets -->
+  <div class="corner-bracket corner-tl"></div>
+  <div class="corner-bracket corner-tr"></div>
+  <div class="corner-bracket corner-bl"></div>
+  <div class="corner-bracket corner-br"></div>
+
+  <div class="relative z-10 h-full flex flex-col justify-center max-w-[1400px] mx-auto px-6 md:px-10">
+    <p class="eyebrow text-goldSoft mb-6" data-aos="fade-up" data-aos-delay="100" data-i18n="hero.eyebrow">Rénovation de cuisines premium — Casablanca</p>
+    <h1 class="hero-title text-paper" data-aos="fade-up" data-aos-delay="200" data-i18n-html="hero.titleHtml">
+      Transformez votre cuisine<br class="hidden md:block"> en un espace <em>moderne</em><br class="hidden md:block"> et <em>élégant</em>.
+    </h1>
+    <p class="hero-sub text-mist/90 mt-8 max-w-xl" data-aos="fade-up" data-aos-delay="350" data-i18n="hero.sub">
+      Nous rénovons votre cuisine avec des matériaux premium, des finitions haut de gamme et une installation réalisée chez vous, à Casablanca et ses environs.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-10" data-aos="fade-up" data-aos-delay="500">
+      <a href="#realisations" class="btn-ghost-light">
+        <span data-i18n="hero.cta1">Découvrir nos réalisations</span>
+      </a>
+      <a href="#contact" class="btn-gold-lg">
+        <span data-i18n="hero.cta2">Réserver une consultation</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- floating stats -->
+  <div class="hero-stats" data-aos="fade-up" data-aos-delay="650">
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-count="100" data-suffix="+">0</span>
+      <span class="hero-stat-label" data-i18n="hero.stat1Label">Cuisines rénovées</span>
+    </div>
+    <div class="hero-stat-sep"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-count="100" data-suffix="%">0</span>
+      <span class="hero-stat-label" data-i18n="hero.stat2Label">Devis personnalisés</span>
+    </div>
+    <div class="hero-stat-sep"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-text" data-i18n-html="hero.stat3Html">Matériaux<br>Premium</span>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span></span>
+    <p data-i18n="hero.scrollCue">Défiler</p>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============ -->
+<section id="transformation" class="section-pad bg-paper">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-gold" data-i18n="transformation.eyebrow">La transformation</p>
+      <h2 class="section-title" data-i18n="transformation.title">Avant / Après</h2>
+      <p class="section-desc" data-i18n="transformation.desc">Faites glisser le curseur pour découvrir l'ampleur d'une rénovation NOYAU — même structure, matériaux et finition entièrement repensés.</p>
+    </div>
+
+    <div class="ba-wrap" data-aos="fade-up" data-aos-delay="150">
+      <div class="ba-slider" id="baSlider">
+        <div class="ba-img ba-after">
+          <img src="https://images.pexels.com/photos/36777882/pexels-photo-36777882.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80" alt="Cuisine après rénovation NOYAU, marbre blanc et îlot central" loading="lazy">
+          <span class="ba-tag ba-tag-after" data-i18n="transformation.tagAfter">Après — Signature NOYAU</span>
+        </div>
+        <div class="ba-img ba-before" id="baBefore">
+          <img src="https://images.pexels.com/photos/35505446/pexels-photo-35505446.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80" alt="Cuisine avant rénovation, style daté" loading="lazy">
+          <span class="ba-tag ba-tag-before" data-i18n="transformation.tagBefore">Avant — Cuisine standard</span>
+        </div>
+        <div class="ba-handle" id="baHandle">
+          <div class="ba-handle-circle">
+            <i data-lucide="move-horizontal" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <input type="range" id="baRange" min="0" max="100" value="50" class="ba-range" aria-label="Comparer avant et après" data-i18n-aria="transformation.ariaRange">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="realisations" class="section-pad bg-bg">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-gold" data-i18n="gallery.eyebrow">Portfolio</p>
+      <h2 class="section-title" data-i18n="gallery.title">Nos réalisations</h2>
+      <p class="section-desc" data-i18n="gallery.desc">Un aperçu de nos cuisines livrées à Casablanca — chaque projet est unique, pensé et mesuré pour l'espace de nos clients.</p>
+    </div>
+
+    <div class="masonry" data-aos="fade-up" data-aos-delay="150">
+      <figure class="masonry-item span-tall">
+        <img src="image/cuisine 1.jpeg" alt="Cuisine premium inox et granit" loading="lazy">
+        <figcaption><span data-i18n-field="title">Cuisine Contemporaine</span><small data-i18n-field="loc">Ain Diab, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item">
+        <img src="image/cuisine 2.jpeg" alt="Cuisine noir et blanc granit" loading="lazy">
+        <figcaption><span data-i18n-field="title">Black Luxury</span><small data-i18n-field="loc">Californie, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item">
+        <img src="image/cuisine 3.jpeg" alt="Plan de travail marbre évier inox" loading="lazy">
+        <figcaption><span data-i18n-field="title">White Marble</span><small data-i18n-field="loc">Bourgogne, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item span-tall">
+        <img src="image/cuisine 4.jpeg" alt="Comptoir en marbre blanc et noir" loading="lazy">
+        <figcaption><span data-i18n-field="title">Marble Edition</span><small data-i18n-field="loc">Racine, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item">
+        <img src="image/cuisine 5.jpeg" alt="Cuisine contemporaine gris et blanc" loading="lazy">
+        <figcaption><span data-i18n-field="title">Contemporain</span><small data-i18n-field="loc">Gauthier, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item">
+        <img src="image/cuisine 6.jpeg" alt="Comptoir granit noir appareils électroménagers" loading="lazy">
+        <figcaption><span data-i18n-field="title">Black Stone</span><small data-i18n-field="loc">Maârif, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item span-tall">
+        <img src="image/cuisine 7.jpeg" alt="Cuisine blanche moderne avec marbre" loading="lazy">
+        <figcaption><span data-i18n-field="title">Épure Blanche</span><small data-i18n-field="loc">CIL, Casablanca</small></figcaption>
+      </figure>
+      
+      <figure class="masonry-item">
+        <img src="image/cuisine 8.jpeg" alt="Cuisine bois avec îlot central" loading="lazy">
+        <figcaption><span data-i18n-field="title">Wood Finish</span><small data-i18n-field="loc">Oasis, Casablanca</small></figcaption>
+      </figure>
+
+      <figure class="masonry-item">
+        <img src="image/cuisine 9.jpeg" alt="Cuisine sur mesure moderne" loading="lazy">
+        <figcaption><span data-i18n-field="title">Modern Concept</span><small data-i18n-field="loc">Anfa, Casablanca</small></figcaption>
+      </figure>
+
+      <figure class="masonry-item span-tall">
+        <img src="image/cuisine 10.jpeg" alt="Aménagement cuisine design" loading="lazy">
+        <figcaption><span data-i18n-field="title">Design Minimal</span><small data-i18n-field="loc">Dar Bouazza, Casablanca</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section-pad bg-paper">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-gold" data-i18n="why.eyebrow">Pourquoi NOYAU</p>
+      <h2 class="section-title" data-i18n="why.title">L'exigence du détail</h2>
+      <p class="section-desc" data-i18n="why.desc">Chaque cuisine que nous livrons répond aux mêmes standards, quel que soit le budget ou le style choisi.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-mist" data-aos="fade-up" data-aos-delay="150">
+      <div class="feature-card">
+        <i data-lucide="gem" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Matériaux premium</h3>
+        <p data-i18n-field="desc">MDF haute densité, plaquage et quartz sélectionnés pour leur durabilité et leur rendu haut de gamme.</p>
+      </div>
+      <div class="feature-card">
+        <i data-lucide="sparkles" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Finitions haut de gamme</h3>
+        <p data-i18n-field="desc">Laque mate, bois véritable, marbre — chaque finition est appliquée avec une précision d'atelier.</p>
+      </div>
+      <div class="feature-card">
+        <i data-lucide="pencil-ruler" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Design sur mesure</h3>
+        <p data-i18n-field="desc">Chaque cuisine est pensée pour l'espace exact de votre logement, pas pour un plan générique.</p>
+      </div>
+      <div class="feature-card">
+        <i data-lucide="hammer" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Installation rapide</h3>
+        <p data-i18n-field="desc">Une équipe dédiée intervient chez vous avec un calendrier précis, du démontage à la pose finale.</p>
+      </div>
+      <div class="feature-card">
+        <i data-lucide="ruler" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Mesure à domicile</h3>
+        <p data-i18n-field="desc">Nous nous déplaçons pour relever chaque cote exacte, au millimètre près, avant toute fabrication.</p>
+      </div>
+      <div class="feature-card">
+        <i data-lucide="receipt" class="feature-icon"></i>
+        <h3 data-i18n-field="title">Prix transparent</h3>
+        <p data-i18n-field="desc">Un devis clair, calculé sur place selon vos dimensions et le modèle choisi — aucune surprise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="processus" class="section-pad bg-ink text-paper relative overflow-hidden py-24">
+  <!-- Background grid pattern -->
+  <div class="absolute inset-0 process-grid-bg opacity-30"></div>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
+    
+    <!-- Section header -->
+    <div class="section-head text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <p class="eyebrow text-gold uppercase tracking-widest text-sm font-semibold mb-3" data-i18n="process.eyebrow">Comment ça marche</p>
+      <h2 class="section-title text-4xl md:text-5xl font-bold mb-6" data-i18n="process.title">Un processus en six étapes</h2>
+      <p class="section-desc text-mist/70 text-lg" data-i18n="process.desc">De la première prise de contact à la fin des travaux, un déroulé clair et maîtrisé.</p>
+    </div>
+
+    <!-- 3x2 Grid Layout for Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- Step 01 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">1</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Calendar Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Réservez une consultation</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Vous nous contactez via le formulaire ou par téléphone pour planifier une visite.</p>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">2</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Home/Location Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Nous nous déplaçons</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Un conseiller NOYAU se rend à votre domicile, à Casablanca ou dans les environs.</p>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">3</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Ruler Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Prise des mesures</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Chaque dimension de votre cuisine est relevée avec précision pour une fabrication sur mesure.</p>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">4</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Swatch/Layers Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Choix du modèle</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Vous sélectionnez le style, les matériaux et les finitions qui correspondent à votre intérieur.</p>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">5</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Calculator/File Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Devis sur place</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Le prix est calculé immédiatement selon les dimensions et le modèle retenu — sans attente.</p>
+        </div>
+      </div>
+
+      <!-- Step 06 -->
+      <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-white/10 transition-all duration-300 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+        <!-- Watermark number -->
+        <span class="absolute -right-2 -top-4 text-9xl font-black text-white/5 group-hover:text-gold/5 transition-colors duration-300 pointer-events-none">6</span>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+            <!-- Wrench Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n-field="title">Début de la rénovation</h3>
+          <p class="text-mist/70 text-sm leading-relaxed" data-i18n-field="desc">Notre équipe intervient chez vous jusqu'à la livraison finale de votre nouvelle cuisine.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ KITCHEN MODELS ============ -->
+<section class="section-pad bg-white py-20">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 text-center mb-12 relative">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-amber-600 uppercase tracking-widest text-sm font-semibold mb-3" data-i18n="models.eyebrow">Collections</p>
+      <h2 class="section-title text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-i18n="models.title">Choisissez votre style</h2>
+      <p class="section-desc text-gray-500 max-w-2xl mx-auto text-lg" data-i18n="models.desc">Six univers, une même exigence de finition. Le modèle n'est que le point de départ — chaque cuisine est ensuite ajustée à vos dimensions.</p>
+    </div>
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 relative">
+    <div class="swiper modelsSwiper overflow-hidden pb-12" data-aos="fade-up" data-aos-delay="150">
+      
+      <!-- Fixed wrapper with flex class -->
+      <div class="swiper-wrapper flex">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/11018266/pexels-photo-11018266.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle Minimal" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">Minimal</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Lignes épurées, façades sans poignée et palette neutre pour un espace apaisé.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/35430058/pexels-photo-35430058.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle Modern" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">Modern</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Volumes contrastés et matériaux mixtes pour une cuisine résolument actuelle.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/6835115/pexels-photo-6835115.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle Black Luxury" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">Black Luxury</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Laque noire mate et touches dorées pour une signature affirmée et sophistiquée.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/36777882/pexels-photo-36777882.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle White Marble" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">White Marble</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Marbre blanc veiné et plan en îlot pour une élégance intemporelle.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/35505452/pexels-photo-35505452.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle Wood Finish" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">Wood Finish</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Placage bois naturel pour une chaleur et une texture authentiques au quotidien.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="model-card h-full bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.15)] transition-shadow duration-300 overflow-hidden relative flex flex-col group border border-gray-100">
+            <div class="model-img h-64 overflow-hidden relative">
+              <img src="https://images.pexels.com/photos/6835066/pexels-photo-6835066.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="Modèle Contemporary" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <span class="model-badge absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm" data-i18n="models.badge">Premium</span>
+            <div class="model-body p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-2" data-i18n-field="title">Contemporary</h3>
+              <p class="text-gray-600 text-sm leading-relaxed" data-i18n-field="desc">Gris et blanc en équilibre, pour une cuisine lumineuse et intemporelle.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination !bottom-0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREMIUM QUALITY ============ -->
+<section class="section-pad bg-paper">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="quality-split">
+      <div class="quality-visual" data-aos="fade-right">
+        <div class="quality-img-main">
+          <img src="https://images.pexels.com/photos/10099281/pexels-photo-10099281.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80" alt="Détail plan de travail en marbre" loading="lazy">
+        </div>
+        <div class="quality-img-float">
+          <img src="https://images.pexels.com/photos/38483619/pexels-photo-38483619.jpeg?auto=compress&cs=tinysrgb&w=700&q=80" alt="Détail charnière et façade cuisine" loading="lazy">
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <p class="eyebrow text-gold" data-i18n="quality.eyebrow">Fabrication</p>
+        <h2 class="section-title !text-left" data-i18n="quality.title">Une qualité qui se voit et se ressent</h2>
+        <p class="section-desc !text-left !mx-0 mb-10" data-i18n="quality.desc">Sous chaque façade se cache une structure pensée pour durer — matériaux certifiés, quincaillerie premium et traitements résistants au quotidien marocain.</p>
+
+        <ul class="quality-list">
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">MDF Premium</strong><span data-i18n-field="span">Panneaux haute densité, stables dans le temps et sans déformation.</span></div></li>
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">Fermeture Soft Close</strong><span data-i18n-field="span">Tiroirs et portes à amortisseur silencieux, sans claquement.</span></div></li>
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">Charnières premium</strong><span data-i18n-field="span">Mécanismes certifiés pour des dizaines de milliers de cycles d'ouverture.</span></div></li>
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">Résistant aux rayures</strong><span data-i18n-field="span">Surfaces traitées pour conserver leur éclat au fil des années.</span></div></li>
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">Résistant à l'eau</strong><span data-i18n-field="span">Plans et façades adaptés aux projections et à l'humidité.</span></div></li>
+          <li><i data-lucide="check" class="w-4 h-4"></i><div><strong data-i18n-field="strong">Haute durabilité</strong><span data-i18n-field="span">Une cuisine pensée pour rester impeccable pendant des années.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONSULTATION FORM ============ -->
+<section id="contact" class="section-pad bg-bg">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-gold" data-i18n="contact.eyebrow">Étape suivante</p>
+      <h2 class="section-title" data-i18n="contact.title">Réservez votre consultation</h2>
+      <p class="section-desc" data-i18n="contact.desc">Remplissez le formulaire ci-dessous. Un conseiller NOYAU vous contacte sous 24h pour planifier la visite de mesure à domicile.</p>
+    </div>
+
+    <div class="form-card" data-aos="fade-up" data-aos-delay="150">
+      <div class="corner-bracket corner-tl form-bracket"></div>
+      <div class="corner-bracket corner-br form-bracket"></div>
+
+      <form id="consultForm" novalidate>
+        <div id="formSuccess" class="form-success hidden">
+          <div class="success-check">
+            <i data-lucide="check" class="w-8 h-8"></i>
+          </div>
+          <h3 data-i18n="contact.success.title">Demande envoyée</h3>
+          <p data-i18n="contact.success.desc">Merci. Un conseiller NOYAU vous contactera très prochainement pour planifier votre visite de mesure.</p>
+        </div>
+
+        <div id="formFields">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom" data-i18n="contact.labels.nom">Nom complet <span>*</span></label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required data-i18n-placeholder="contact.placeholders.nom">
+              <span class="field-error" data-i18n="contact.errors.nom">Merci de renseigner votre nom.</span>
+            </div>
+            <div class="field">
+              <label for="telephone" data-i18n="contact.labels.telephone">Téléphone <span>*</span></label>
+              <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" required data-i18n-placeholder="contact.placeholders.telephone">
+              <span class="field-error" data-i18n="contact.errors.telephone">Merci de renseigner un numéro valide.</span>
+            </div>
+            <div class="field">
+              <label for="ville" data-i18n="contact.labels.ville">Ville <span>*</span></label>
+              <input type="text" id="ville" name="ville" placeholder="Casablanca, Bouskoura..." required data-i18n-placeholder="contact.placeholders.ville">
+              <span class="field-error" data-i18n="contact.errors.ville">Merci de renseigner votre ville.</span>
+            </div>
+            <div class="field">
+              <label for="adresse" data-i18n="contact.labels.adresse">Adresse</label>
+              <input type="text" id="adresse" name="adresse" placeholder="Quartier, rue..." data-i18n-placeholder="contact.placeholders.adresse">
+            </div>
+            <div class="field">
+              <label for="dimensions" data-i18n="contact.labels.dimensions">Dimensions approximatives</label>
+              <input type="text" id="dimensions" name="dimensions" placeholder="Ex : 4m x 3m" data-i18n-placeholder="contact.placeholders.dimensions">
+            </div>
+            <div class="field">
+              <label for="budget" data-i18n="contact.labels.budget">Budget envisagé</label>
+              <select id="budget" name="budget">
+                <option value="" data-i18n-option="contact.budgetOptions.0">Sélectionner une fourchette</option>
+                <option value="40-70k" data-i18n-option="contact.budgetOptions.1">40 000 — 70 000 MAD</option>
+                <option value="70-120k" data-i18n-option="contact.budgetOptions.2">70 000 — 120 000 MAD</option>
+                <option value="120-200k" data-i18n-option="contact.budgetOptions.3">120 000 — 200 000 MAD</option>
+                <option value="200k+" data-i18n-option="contact.budgetOptions.4">200 000 MAD et plus</option>
+              </select>
+            </div>
+            <div class="field md:col-span-2">
+              <label for="modele" data-i18n="contact.labels.modele">Modèle préféré</label>
+              <select id="modele" name="modele">
+                <option value="" data-i18n-option="contact.modeleOptions.placeholder">Sélectionner un modèle</option>
+                <option value="minimal" data-i18n-option="models.items.0.title">Minimal</option>
+                <option value="modern" data-i18n-option="models.items.1.title">Modern</option>
+                <option value="black-luxury" data-i18n-option="models.items.2.title">Black Luxury</option>
+                <option value="white-marble" data-i18n-option="models.items.3.title">White Marble</option>
+                <option value="wood-finish" data-i18n-option="models.items.4.title">Wood Finish</option>
+                <option value="contemporary" data-i18n-option="models.items.5.title">Contemporary</option>
+                <option value="indecis" data-i18n-option="contact.modeleOptions.indecis">Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="field md:col-span-2">
+              <label for="message" data-i18n="contact.labels.message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre projet..." data-i18n-placeholder="contact.placeholders.message"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn-gold-lg w-full md:w-auto mt-4">
+            <span id="submitText" data-i18n="contact.submit">Réserver ma consultation</span>
+            <span id="submitLoader" class="submit-loader hidden"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="section-pad bg-paper">
+  <div class="max-w-[900px] mx-auto px-6 md:px-10">
+    <div class="section-head" data-aos="fade-up">
+      <p class="eyebrow text-gold" data-i18n="faq.eyebrow">Questions fréquentes</p>
+      <h2 class="section-title" data-i18n="faq.title">Vous vous posez des questions?</h2>
+    </div>
+
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="150">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-i18n-field="q">Comment le prix est-il calculé ?</span>
+          <i data-lucide="plus" class="faq-icon"></i>
+        </button>
+        <div class="faq-a">
+          <p data-i18n-field="a">Le prix dépend de deux éléments : les dimensions exactes de votre cuisine, relevées lors de notre visite à domicile, et le modèle que vous choisissez. Nous vous communiquons un devis précis sur place, sans surprise ensuite.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-i18n-field="q">Combien de temps dure une rénovation ?</span>
+          <i data-lucide="plus" class="faq-icon"></i>
+        </button>
+        <div class="faq-a">
+          <p data-i18n-field="a">La durée varie selon la taille du projet et le modèle choisi. Après la prise de mesure et la validation du devis, nous vous communiquons un calendrier précis avant le début des travaux.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-i18n-field="q">Travaillez-vous uniquement à Casablanca ?</span>
+          <i data-lucide="plus" class="faq-icon"></i>
+        </button>
+        <div class="faq-a">
+          <p data-i18n-field="a">Nous intervenons à Casablanca ainsi que dans les villes environnantes. N'hésitez pas à nous indiquer votre ville dans le formulaire, nous confirmerons la faisabilité de la visite.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-i18n-field="q">Quels matériaux utilisez-vous ?</span>
+          <i data-lucide="plus" class="faq-icon"></i>
+        </button>
+        <div class="faq-a">
+          <p data-i18n-field="a">Nous travaillons avec des panneaux MDF haute densité, des plaquages bois véritable, du marbre et des laques premium, ainsi que des quincailleries certifiées (charnières et fermetures soft close).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-i18n-field="q">Dois-je payer un acompte avant la visite ?</span>
+          <i data-lucide="plus" class="faq-icon"></i>
+        </button>
+        <div class="faq-a">
+          <p data-i18n-field="a">Non. La consultation et la prise de mesure à domicile sont gratuites et sans engagement. Le devis vous est présenté sur place, vous restez libre de votre décision.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="max-w-[1000px] mx-auto px-6 md:px-10 text-center relative">
+    <p class="eyebrow text-gold" data-aos="fade-up" data-i18n="finalCta.eyebrow">Prêt à commencer</p>
+    <h2 class="final-cta-title" data-aos="fade-up" data-aos-delay="100" data-i18n-html="finalCta.titleHtml">Votre nouvelle cuisine<br>commence aujourd'hui.</h2>
+    <p class="final-cta-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="finalCta.sub">Réservez votre consultation dès aujourd'hui et recevez un devis personnalisé, calculé chez vous.</p>
+    <a href="#contact" class="btn-gold-lg mt-10" data-aos="fade-up" data-aos-delay="300">
+      <span data-i18n="finalCta.cta">Réserver ma consultation</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="font-serif text-2xl text-paper">NOYAU</span>
+        <p data-i18n="footer.desc">Rénovation de cuisines premium, sur mesure, à Casablanca et ses environs.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" aria-label="Pinterest"><i data-lucide="pin" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.navTitle">Navigation</h4>
+        <a href="#accueil" data-i18n="nav.home">Accueil</a>
+        <a href="#realisations" data-i18n="nav.projects">Réalisations</a>
+        <a href="#processus" data-i18n="nav.process">Processus</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">Contact</h4>
+        <a href="tel:+212600000000"><i data-lucide="phone" class="w-3.5 h-3.5"></i> +212 6 00 00 00 00</a>
+        <a href="https://wa.me/212600000000" target="_blank" rel="noopener"><i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp</a>
+        <a href="mailto:contact@noyau-cuisines.ma"><i data-lucide="mail" class="w-3.5 h-3.5"></i> contact@noyau-cuisines.ma</a>
+        <span><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> <span data-i18n="footer.address">Casablanca, Maroc</span></span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> NOYAU. <span data-i18n="footer.copyright">Tous droits réservés.</span></p>
+      <p data-i18n="footer.tagline">Cuisines premium — Casablanca &amp; environs</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/212600000000" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp" data-i18n-aria="whatsapp.aria">
+  <i data-lucide="message-circle" class="w-6 h-6"></i>
+</a>
+
+<!-- Mobile sticky quick-action bar -->
+<div class="mobile-sticky-bar md:hidden">
+  <a href="tel:+212600000000" class="sticky-btn sticky-btn-ghost">
+    <i data-lucide="phone" class="w-[18px] h-[18px]"></i>
+    <span data-i18n="sticky.call">Appeler</span>
+  </a>
+  <a href="#contact" class="sticky-btn sticky-btn-gold">
+    <i data-lucide="calendar-check" class="w-[18px] h-[18px]"></i>
+    <span data-i18n="sticky.book">Réserver</span>
+  </a>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
